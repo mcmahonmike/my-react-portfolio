@@ -1,11 +1,11 @@
 import React from "react";
 
-function Header() {
+function Portfolio() {
     return (
         <section>
-         <h1>Mike McMahon</h1>
+
         </section>
     )
 }
 
-export default Header;
+export default Portfolio;
