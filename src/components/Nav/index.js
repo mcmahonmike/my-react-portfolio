@@ -1,16 +1,33 @@
-import React from "react";
-import AppRouter from "../../AppRouter";
+import React from 'react'
+import {NavLink} from 'react-router-dom'
 
-function Nav() {
+function Navigation() {
     return (
-            <nav>
-            <a href="http://localhost:3000/about"> About Me</a>
-            <a href="http://localhost:3000/portfolio"> Portfolio</a>
-            <a href="http://localhost:3000/contact"> Contact</a>
-            <a href="http://localhost:3000/resume"> Resume</a>
-            <AppRouter/>
-            </nav>
-    );
+        <div>
+            <ul>
+                <NavLink to = '/home'>
+                    <li>
+                        About Me
+                    </li>
+                </NavLink>
+                <NavLink to = '/contact'>
+                    <li>
+                        Contact
+                    </li>
+                </NavLink>
+                <NavLink to ='/portfolio'>
+                    <li>
+                        Portfolio
+                    </li>
+                </NavLink>
+                <NavLink to = '/resume'>
+                    <li>
+                        Resume
+                    </li>
+                </NavLink>
+            </ul>
+        </div>
+    )
 }
 
-export default Nav;
+export default Navigation
