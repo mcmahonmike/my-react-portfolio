@@ -1,27 +1,27 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
 
-function Navigation() {
+function Nav() {
     return (
         <div>
-            <ul>
+            <ul className='nav'>
                 <NavLink to = '/home'>
-                    <li>
+                    <li className='navItem'>
                         About Me
                     </li>
                 </NavLink>
                 <NavLink to = '/contact'>
-                    <li>
+                    <li className='navItem'>
                         Contact
                     </li>
                 </NavLink>
                 <NavLink to ='/portfolio'>
-                    <li>
+                    <li className='navItem'>
                         Portfolio
                     </li>
                 </NavLink>
                 <NavLink to = '/resume'>
-                    <li>
+                    <li className='navItem'>
                         Resume
                     </li>
                 </NavLink>
@@ -30,4 +30,4 @@ function Navigation() {
     )
 }
 
-export default Navigation
+export default Nav
