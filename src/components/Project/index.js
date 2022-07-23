@@ -2,7 +2,7 @@ import React from "react";
 
 function Project(props) {
     const currentProject = {
-        name: "projectOne",
+        name: "Meal Maker",
         description:
           "Photo of project one",
       };
