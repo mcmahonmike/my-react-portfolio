@@ -2,9 +2,9 @@ import React from "react";
 
 function Project(props) {
     const currentProject = {
-        name: "Meal Maker",
+        name: "Jaguar Games",
         description:
-          "Photo of project one",
+          "https://jaguar-games.herokuapp.com/",
       };
     return (
         <section>
