@@ -1,33 +1,35 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Contact from './components/Contact';
-import Portfolio from './components/Portfolio';
-import Resume from './components/Resume';
-import Home from './components/Home';
-import './App.css';
+import { Box, Grommet, ResponsiveContext} from 'grommet'
+import { Home } from './components/Home'
+
+
+const theme = {
+  global: {
+    colors:{
+      brand:'#F9E076',
+    },
+    font: {
+      family: 'Roboto',
+      size: '18px',
+      height: '20px',
+    },
+  },
+};
 
 
 
-function App() {
+const App = () => {
   return (
-    <div>
-    <BrowserRouter>
-    <Header></Header>
-    <Routes>
-        <Route path='/home' element={<Home />}/>
-        <Route path='/contact' element={<Contact />}/>
-        <Route path='/portfolio' element={<Portfolio />}/>
-        {/* default page */}
-        <Route path='/' element={<Home />}/>
-        <Route path='/resume' element={<Resume />}/>
-    </Routes>
-    </BrowserRouter>
-    <Footer></Footer>
-
-</div>
-  );
+  <Grommet theme={theme} full>
+  <ResponsiveContext.Consumer>
+   {size => (
+      <Box fill>
+        < Home />
+      </Box>
+   )}
+ </ResponsiveContext.Consumer>
+</Grommet>
+  )
 }
 
 export default App;

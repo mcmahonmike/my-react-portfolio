@@ -1,17 +1,31 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Header from '../Header';
+import Footer from '../Footer';
+import Contact from '../Contact';
+import Portfolio from '../Portfolio';
+import Resume from '../Resume';
 
 
 
-function Home() {
+
+
+export const Home = () => {
     return (
-            <section className="my-5">
-              <div>
-              <h1> About Me</h1>
-              <p>My name is Michael McMahon and I am a developer in training </p>
-              </div>
-              </section>
+      <div>
+      <BrowserRouter>
+      <Header></Header>
+      <Routes>
+          <Route path='/contact' element={<Contact />}/>
+          <Route path='/portfolio' element={<Portfolio />}/>
+          {/* default page */}
+          <Route path='/resume' element={<Resume />}/>
+      </Routes>
+      </BrowserRouter>
+      <Footer></Footer>
+  
+  </div>
 
           );
 }
 
-export default Home;
