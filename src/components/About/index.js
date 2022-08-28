@@ -1,15 +1,20 @@
+
 import React from "react";
+import { Page, PageContent, Paragraph, Box, Heading} from 'grommet'
 
 
 function About() {
     return (
-            <section className="my-5">
-              <div>
-              <h1> About Me</h1>
-              <p>My name is Michael McMahon and I am a developer in training </p>
-              </div>
-              </section>
-
+      <Box direction="row"  gap="small">
+      <Page kind="narrow">
+      <PageContent background="light-1">
+        <Paragraph>
+          <Heading>Hello,</Heading>
+        </Paragraph>
+        <Heading>My name is Michael McMahon and I am a web developer.</Heading>
+      </PageContent>
+    </Page>
+    </Box>
           );
 }
 

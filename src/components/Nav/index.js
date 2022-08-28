@@ -1,11 +1,12 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
+import { Box } from 'grommet'
 
-function Nav() {
+export const Nav = () => {
     return (
-        <div>
+        <Box>
             <ul className='nav'>
-                <NavLink to = '/home'>
+                <NavLink to = '/about'>
                     <li className='navItem'>
                         About Me
                     </li>
@@ -26,8 +27,6 @@ function Nav() {
                     </li>
                 </NavLink>
             </ul>
-        </div>
+        </Box>
     )
 }
-
-export default Nav

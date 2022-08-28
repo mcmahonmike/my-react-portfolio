@@ -1,13 +1,20 @@
 import React from "react";
-import Nav from "../Nav";
+import { Nav } from "../Nav";
+import { Box, Header, PageHeader } from 'grommet'
 
-function Header() {
+
+function HomeHeader() {
     return (
-        <header>
-         <h1>Mike McMahon</h1>
-         <Nav/>
-        </header>
+        <Box>
+        <Header>
+         <PageHeader
+            title="[HALOUMI]"
+            subtitle="A place for building"
+            />
+        </Header>
+        <Nav></Nav>
+        </Box>
     )
 }
 
-export default Header;
+export default HomeHeader;
