@@ -2,12 +2,12 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 import { Box } from 'grommet'
 
-export const Nav = () => {
+export const Nav = (props) => {
     return (
         <Box>
             <ul className='nav'>
                 <NavLink to = '/about'>
-                    <li className='navItem'>
+                    <li className='navItem' onClick={props.onClick}>
                         About Me
                     </li>
                 </NavLink>

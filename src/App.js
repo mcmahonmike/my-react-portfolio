@@ -23,7 +23,7 @@ const App = () => {
   <Grommet theme={theme} full>
   <ResponsiveContext.Consumer>
    {size => (
-      <Box fill>
+      <Box fill >
         < Home />
       </Box>
    )}

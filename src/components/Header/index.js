@@ -1,13 +1,16 @@
 import React from "react";
-// import { Nav } from "../Nav";
+import { NavLink } from "react-router-dom"
 import { Box, Header, PageHeader, Menu, Button } from 'grommet'
 
 
-function HomeHeader() {
+
+
+function HomeHeader(props) {
+    
     const items = [
-        { label: 'Change username', onClick: () => {} },
-        { label: 'Reset Password', onClick: () => {}  },
-        { label: 'Logout', onClick: () => {}  }
+        { label: <NavLink to = '/about'> <h3 onClick={props.onClick}> Home </h3> </NavLink>},
+        { label: <NavLink to = '/contact'> <h3 onClick={props.onClick}> Contact </h3> </NavLink>},
+        { label: <NavLink to = '/resume'> <h3 onClick={props.onClick}> Resume </h3> </NavLink>}
       ];
     
     return (
@@ -26,7 +29,7 @@ function HomeHeader() {
         {/* <Nav></Nav> */}
         </Box>
         </Button>    
-        <Menu label="Account Information" items={items} width="medium" />
+        <Menu label="MENU" items={items} width="medium" />
         </Header>
     )
 }

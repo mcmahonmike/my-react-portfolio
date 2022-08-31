@@ -14,7 +14,7 @@ import { Box } from "grommet";
 
 export const Home = () => {
     return (
-      <Box>
+      <Box gap="small" >
       <BrowserRouter>
       <HomeHeader></HomeHeader>
       <Routes>
