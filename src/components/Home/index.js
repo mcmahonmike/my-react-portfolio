@@ -25,8 +25,7 @@ export const Home = () => {
           <Route path='/resume' element={<Resume />}/>
       </Routes>
       </BrowserRouter>
-      <Footer></Footer>
-  
+      {/* <Footer></Footer> */}
   </Box>
 
           );
