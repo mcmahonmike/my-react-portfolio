@@ -16,7 +16,7 @@ export const Home = () => {
     return (
       <Box gap="small" >
       <BrowserRouter>
-      <HomeHeader></HomeHeader>
+      {/* <HomeHeader></HomeHeader>  */}
       <Routes>
           <Route path='/my-react-portfolio' element={<About/>}/>
           <Route path='/contact' element={<Contact />}/>

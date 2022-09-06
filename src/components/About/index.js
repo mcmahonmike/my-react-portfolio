@@ -1,8 +1,9 @@
 import image from '../../assets/images/mike-m.png'
 import React from "react";
-import { Card, CardBody, CardHeader, CardFooter, Button, Box, Heading, Text, Grid, Image, Paragraph } from 'grommet'
+import { List, CardBody, CardHeader, CardFooter, Button, Box, Heading, Text, Grid, Image, Paragraph } from 'grommet'
 import { Favorite, ShareOption } from 'grommet-icons';
-const columns = ['small']
+import Portfolio from '../Portfolio';
+
 const rows = ['small']
 function About() {
     return (
@@ -10,7 +11,7 @@ function About() {
       <Grid columns={['1/2', '1/2']}>
         <Box alignSelf="center" margin='medium'>
           <Heading level={2} size="large" margin="none">
-             <h3>Welcome</h3> 
+             <div>Welcome</div> 
           </Heading>
             <Paragraph size="large" margin={{ bottom: 'none' }}>
                 This is Haloumi, built to showcase some of the work and services that are possible.
@@ -30,14 +31,18 @@ function About() {
             />
           </Box>
       </Box>
+      <Heading alignSelf='center' pad='small' margin='small'><h3>The Work</h3></Heading>
+      <Portfolio />
       </Grid>
-      <Box alignSelf="center" margin='medium' border='bottom'>
-        <Heading><h3>The Work</h3></Heading>
-        </Box>
-        <Grid columns={columns}>
-        <Box></Box>
-        </Grid>
+      
+
         
+        <Box  margin='medium' border='bottom'>
+          
+        </Box>
+        <Box margin='small'>
+          
+        </Box>
       </>
           );
 }

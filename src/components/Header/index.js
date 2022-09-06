@@ -7,16 +7,23 @@ import '../../../src/index.css'
 
 
 
+
+
 function HomeHeader(props) {
+
     
     const items = [
-        { label: <NavLink to = '/my-react-portfolio'> <h3 onClick={props.onClick}> Home </h3> </NavLink>},
-        { label: <NavLink to = '/contact'> <h3 onClick={props.onClick}> Contact </h3> </NavLink>},
-        { label: <NavLink to = '/resume'> <h3 onClick={props.onClick}> Resume </h3> </NavLink>}
+        { label: <NavLink to = '/my-react-portfolio'> <div onClick={props.onClick}> Home </div> </NavLink>},
+        { label: <NavLink to = '/contact'> <div onClick={props.onClick}> Contact </div> </NavLink>},
+        { label: <NavLink to = '/resume'> <div onClick={props.onClick}> Resume </div> </NavLink>}
       ];
     
     return (
-        <Header background="background-contrast" pad="small" fill="horizontal">
+        <Header background={{
+            color: 'accent-1',
+            opacity:'strong',
+            sticky: 'scrollUp'
+            }} pad="small" fill="horizontal">
         <Button>
         <Box
             direction="row"
