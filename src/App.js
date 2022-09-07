@@ -16,7 +16,7 @@ import Portfolio from './components/Portfolio';
 const theme = {
   global: {
     colors: {
-      brand: '#228BE6',
+      brand: '#9CA89E',
     },
     font: {
       family: 'Roboto',
@@ -50,8 +50,8 @@ class App extends Component {
       <Grommet theme={theme} full>
         <ResponsiveContext.Consumer>
           {size => (
-            <Box fill>
-              <AppBar>
+            <Box fill >
+              <AppBar >
                 <Heading level='3' margin='none'><div>[HALOUMI]</div></Heading>
                 <Button
                   icon={<Cube />}
@@ -89,7 +89,6 @@ class App extends Component {
                         onClick={() => this.setState({ showSidebar: false })}
                       />
                     </Box>
-                    <Portfolio />
                     <Box
                       fill
                       background='light-2'

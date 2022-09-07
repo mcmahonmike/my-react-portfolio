@@ -1,16 +1,14 @@
 import image from '../../assets/images/mike-m.png'
 import React from "react";
-import { List, CardBody, CardHeader, CardFooter, Button, Box, Heading, Text, Grid, Image, Paragraph } from 'grommet'
-import { Favorite, ShareOption } from 'grommet-icons';
+import {  Box, Heading, Grid, Image, Paragraph } from 'grommet'
 import Portfolio from '../Portfolio';
 
-const rows = ['small']
 function About() {
     return (
       <>
       <Grid columns={['1/2', '1/2']}>
-        <Box alignSelf="center" margin='medium'>
-          <Heading level={2} size="large" margin="none">
+        <Box alignSelf="center" margin='medium' pad='small' border='all' elevation='medium'>
+          <Heading level={2} size="large" margin="none" >
              <div>Welcome</div> 
           </Heading>
             <Paragraph size="large" margin={{ bottom: 'none' }}>
@@ -25,6 +23,7 @@ function About() {
                 animation='zoomIn'
                 round='true'>
             <Image
+              elevation='medium'
               src={image}
               fit="contain"
               alt="Michael McMahon standing in a field"
