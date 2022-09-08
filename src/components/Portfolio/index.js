@@ -7,10 +7,10 @@ function Portfolio() {
     return (
         <>
             <Page kind="wide" pad='small'>
-            <PageContent background="light-3"  elevation="medium">
+            <PageContent background="dark-3"  elevation="medium">
             <PageHeader
                 title="Stats Buddy"
-                subtitle=<Box width='small'> <Button elevation='medium' border='brand' label="Visit Page" /> <Button border='brand'label=<Github/> /></Box>
+                subtitle=<Box width='small'> <Button border='brand' label="Visit Page" /> <Button border='brand'label=<Github/> /></Box>
                 actions={ <Box><Image fit="contain"
                 src={imageStat} /></Box> }
             />
@@ -18,10 +18,10 @@ function Portfolio() {
             </PageContent>
             </Page>
             <Page kind="wide" pad='small'>
-            <PageContent background="light-3" elevation="medium">
+            <PageContent background="dark-3" elevation="medium">
             <PageHeader
                 title="Jaguar Games"
-                subtitle=<Box width='small'> <Button elevation='medium' border='brand' label="Visit Site" /> <Button border='brand'label=<Github/> /></Box>
+                subtitle=<Box width='small'> <Button border='brand' label="Visit Site" /> <Button border='brand'label=<Github/> /></Box>
                 parent={<Anchor label="" />}
                 actions={<Box height="small" width="small"><Image fit="contain"
                 src={imageJag} /></Box>}
@@ -30,10 +30,10 @@ function Portfolio() {
             </PageContent>
             </Page>
             <Page kind="wide" pad='small'>
-            <PageContent background="light-3" elevation="medium">
+            <PageContent background="dark-3" elevation="medium">
             <PageHeader
                 title="Meal Maker"
-                subtitle=<Box width='small'> <Button elevation='medium' border='brand' label="Visit Site" /> <Button border='brand'label=<Github/> /></Box>
+                subtitle=<Box width='small'> <Button border='brand' label="Visit Site" /> <Button border='brand'label=<Github/> /></Box>
                 parent={<Anchor label="" />}
                 actions={<Box height="small" width="small"><Image fit="contain"
                 src={imageJag} /></Box>}

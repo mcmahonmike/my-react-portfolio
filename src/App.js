@@ -12,11 +12,14 @@ import { FormClose, Cube } from 'grommet-icons';
 import '../src/index.css'
 import { Home } from './components/Home';
 import Portfolio from './components/Portfolio';
+import { FooterExample } from './components/Footer';
+import { NavSide } from './components/Nav';
 
 const theme = {
   global: {
     colors: {
-      brand: '#9CA89E',
+      brand: '#798ea4',
+      background:'#24425A'
     },
     font: {
       family: 'Roboto',
@@ -72,7 +75,7 @@ class App extends Component {
                       align='center'
                       justify='center'
                     >
-                      sidebar
+                      <NavSide/>
                     </Box>
                   </Collapsible>
                 ): (

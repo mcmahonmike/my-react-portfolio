@@ -1,17 +1,43 @@
-import React from "react";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { FaGithub, FaLinkedin, FaStackOverflow } from 'react-icons/fa'
+import React, { useContext } from 'react';
+import { Box, Button, Footer, ResponsiveContext, Text } from 'grommet';
 
-function Footer() {
-    return (
-        <footer>
-            <ul>
-                <li> <a href="https://github.com/mcmahonmike"> < FaGithub  /> </a> </li>
-                <li> <a href="https://www.linkedin.com/in/michael-mcmahon-57637113b/"> < FaLinkedin /></a></li>
-                <li> <a href="https://stackoverflow.com/users/18238657/michael-mcmahon">< FaStackOverflow /></a>  </li>
-            </ul>
-        </footer>
-    )
-}
+export const FooterExample = () => {
+  const size = useContext(ResponsiveContext);
+  const year = new Date().getFullYear();
 
-export default Footer;
+  const footerLinks = [
+    { label: 'Terms' },
+    { label: 'Privacy' },
+    { label: 'Security' },
+    { label: 'Feedback' },
+  ];
+  return (
+    <Footer
+      background="brand"
+      direction={!['xsmall', 'small'].includes(size) ? 'row' : 'column'}
+      align={!['xsmall', 'small'].includes(size) ? 'center' : undefined}
+      pad={{ horizontal: 'medium', vertical: 'small' }}
+      fill="horizontal"
+    >
+      <Box
+        direction={!['xsmall', 'small'].includes(size) ? 'row' : 'column'}
+        align={!['xsmall', 'small'].includes(size) ? 'center' : undefined}
+        gap="xsmall"
+      >
+        <Text size="small">
+          &copy; {year} HALOUMI LLC
+        </Text>
+      </Box>
+      <Box
+        direction="row"
+        align={!['xsmall', 'small'].includes(size) ? 'center' : undefined}
+        gap="xsmall"
+        wrap
+      >
+        {footerLinks.map(link => (
+          <Button key={link.label} label={link.label} />
+        ))}
+      </Box>
+    </Footer>
+  );
+};
