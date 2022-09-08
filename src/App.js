@@ -11,15 +11,13 @@ import {
 import { FormClose, Cube } from 'grommet-icons';
 import '../src/index.css'
 import { Home } from './components/Home';
-import Portfolio from './components/Portfolio';
-import { FooterExample } from './components/Footer';
 import { NavSide } from './components/Nav';
 
 const theme = {
   global: {
     colors: {
       brand: '#798ea4',
-      background:'#24425A'
+      background: 'linear-gradient(#24425A, #798ea4)'
     },
     font: {
       family: 'Roboto',

@@ -8,7 +8,7 @@ function About() {
     return (
       <>
       <Grid columns={['1/2', '1/2']}>
-        <Box alignSelf="center" margin='medium' pad='small' border='all' elevation='medium'>
+        <Box alignSelf="center" margin='medium' pad='small'>
           <Heading level={2} size="large" margin="none" >
              <div>Welcome ,</div> 
           </Heading>
@@ -17,7 +17,7 @@ function About() {
             </Paragraph>
         </Box>
       <Box height={{ min: 'medium' }} pad={{ vertical: 'large' }} border='between'>
-        <Stack anchor='top-right'>
+        <Stack anchor='center'>
           
           <Box height="medium"
                 animation='zoomIn'
@@ -37,7 +37,7 @@ function About() {
             places={[
               {
                 name: 'Milwaukee',
-                location: [43.0389, 87.9065],
+                location: [43.0389, -87.9065],
                 color: 'accent-2',
                 onClick: (name) => {},
               },
@@ -67,7 +67,10 @@ function About() {
             />
           </Box>
       </Box>
-      <Heading alignSelf='center' pad='small' margin='small'><h3>My Work</h3></Heading>
+      <Box>
+      <Heading alignSelf='center' pad='small' margin='small'><h3>My Work ,</h3></Heading>
+      <Text margin='medium'>With more work available to be seen through my GitHub page</Text>
+      </Box>
       <Portfolio />
       </Grid>
       <FooterExample/>

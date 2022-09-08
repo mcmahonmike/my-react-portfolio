@@ -38,7 +38,7 @@ function Portfolio() {
                 actions={<Box height="small" width="small"><Image fit="contain"
                 src={imageJag} /></Box>}
             />
-            <Paragraph>A simple app built for generating a list of helpful recipe ideas through using helpful online API's.</Paragraph>
+            <Paragraph>A simple app built for generating a list of helpful recipe ideas through using helpful online API's. HTML, Materialize, JavaScript</Paragraph>
             </PageContent>
             </Page>
 

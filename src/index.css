@@ -7,3 +7,7 @@ video {
     width: 100%;
     object-fit: cover;
 }
+
+#grad {
+    background-image: linear-gradient(#24425A, #798ea4);
+  }
