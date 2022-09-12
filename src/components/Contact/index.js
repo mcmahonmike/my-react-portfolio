@@ -21,10 +21,9 @@ const Contact = () => {
         <label htmlFor="message">Message:</label>
         <textarea name="message" required />
       
-      <Button margin='xsmall' color='light-1' primary label="Send" type="submit"></Button>
+      <Button margin='xsmall' color='light-1' primary label="Send" type="submit" />
       </Box>
     </form>
-    
     </Box>
   );
 };
