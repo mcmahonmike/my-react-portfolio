@@ -1,43 +1,31 @@
-import React, { useState } from "react";
+import { Box, PageHeader, Button } from "grommet";
+import React from "react";
 
 const Contact = () => {
-  const [status, setStatus] = useState("Submit");
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("Sending...");
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
-  };
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
+    <Box alignSelf="center" margin='small' justify="center">
+      <PageHeader 
+          title="Contact Me!"/>
+          
+    <form action="9d17f8c6d84219e88df3c4225f2d623c" method="POST">
+    <Box margin='small' justify="center">
         <label htmlFor="name">Name:</label>
-        <input type="text" id="name" required />
-      </div>
-      <div>
+        <input type="text" name="name" required />
+      
         <label htmlFor="email">Email:</label>
-        <input type="email" id="email" required />
-      </div>
-      <div>
+        <input type="email" name="email" required />
+
+        <label htmlFor="subject">Subject:</label>
+        <input type="subject" name="_subject" required />
+
         <label htmlFor="message">Message:</label>
-        <textarea id="message" required />
-      </div>
-      <button type="submit">{status}</button>
+        <textarea name="message" required />
+      
+      <Button margin='xsmall' color='light-1' primary label="Send" type="submit"></Button>
+      </Box>
     </form>
+    
+    </Box>
   );
 };
 

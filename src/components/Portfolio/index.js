@@ -3,6 +3,7 @@ import React from "react";
 import { Github } from "grommet-icons";
 import imageJag from '../../assets/images/jaguar-games-home.jpg'
 import imageStat from '../../assets/images/stats-buddy.jpg'
+import imageMeal from '../../assets/images/meal-maker.png'
 function Portfolio() {
     return (
         <>
@@ -34,7 +35,7 @@ function Portfolio() {
                 title="Meal Maker"
                 subtitle=<Box width='small'> <Button margin='small' href="https://mcmahonmike.github.io/meal-maker/" border='brand' label="Visit Site" alignSelf="center" /> <Button href="https://github.com/mcmahonmike/meal-maker" alignSelf="center" border='brand'label=<Github/> /></Box>
                 actions={<Box height="small" width="small"><Image fit="contain"
-                src={imageJag} /></Box>}
+                src={imageMeal} /></Box>}
             />
             <Paragraph>A simple app built for generating a list of helpful recipe ideas through using helpful online API's. HTML, Materialize, JavaScript</Paragraph>
             </PageContent>
