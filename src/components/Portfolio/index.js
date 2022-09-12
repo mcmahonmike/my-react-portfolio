@@ -6,11 +6,11 @@ import imageStat from '../../assets/images/stats-buddy.jpg'
 function Portfolio() {
     return (
         <>
-            <Page kind="wide" pad='small'>
-            <PageContent background="dark-3"  elevation="medium">
+            <Page kind="wide" pad='small' >
+            <PageContent background="light-6"  elevation="medium" round='medium'>
             <PageHeader
                 title="Stats Buddy"
-                subtitle=<Box width='small'> <Button border='brand' label="Visit Page" /> <Button border='brand'label=<Github/> /></Box>
+                subtitle=<Box width='small'> <Button margin="small" href="https://nameless-taiga-18247.herokuapp.com/" border='brand' label="Visit Page" alignSelf="center" /> <Button href="https://github.com/SafteyDav3/stats-buddy" alignSelf="center" border='brand'label=<Github/> /></Box>
                 actions={ <Box><Image fit="contain"
                 src={imageStat} /></Box> }
             />
@@ -18,11 +18,10 @@ function Portfolio() {
             </PageContent>
             </Page>
             <Page kind="wide" pad='small'>
-            <PageContent background="dark-3" elevation="medium">
+            <PageContent background="light-6" elevation="medium" round='medium'>
             <PageHeader
                 title="Jaguar Games"
-                subtitle=<Box width='small'> <Button border='brand' label="Visit Site" /> <Button border='brand'label=<Github/> /></Box>
-                parent={<Anchor label="" />}
+                subtitle=<Box width='small'> <Button margin='small' href="https://jaguar-games.herokuapp.com/" border='brand' label="Visit Site" alignSelf="center" /> <Button href="https://github.com/mcmahonmike/jaguar-games" alignSelf="center" border='brand'label=<Github/> /></Box>
                 actions={<Box height="small" width="small"><Image fit="contain"
                 src={imageJag} /></Box>}
             />
@@ -30,11 +29,10 @@ function Portfolio() {
             </PageContent>
             </Page>
             <Page kind="wide" pad='small'>
-            <PageContent background="dark-3" elevation="medium">
+            <PageContent background="light-6" elevation="medium" round='medium'>
             <PageHeader
                 title="Meal Maker"
-                subtitle=<Box width='small'> <Button border='brand' label="Visit Site" /> <Button border='brand'label=<Github/> /></Box>
-                parent={<Anchor label="" />}
+                subtitle=<Box width='small'> <Button margin='small' href="https://mcmahonmike.github.io/meal-maker/" border='brand' label="Visit Site" alignSelf="center" /> <Button href="https://github.com/mcmahonmike/meal-maker" alignSelf="center" border='brand'label=<Github/> /></Box>
                 actions={<Box height="small" width="small"><Image fit="contain"
                 src={imageJag} /></Box>}
             />

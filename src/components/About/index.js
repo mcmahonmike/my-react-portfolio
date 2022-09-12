@@ -25,7 +25,7 @@ function About() {
                   <Text>[HALOUMI]</Text>
         <WorldMap
             margin='small'
-            color="neutral-1"
+            color="light-5"
             continents={[
               {
                 name: 'North America',

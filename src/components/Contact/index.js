@@ -1,39 +1,44 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
-function Contact() {
-  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
-  const { name, email, message } = formState;
-
-  function handleChange(e) {
-    setFormState({...formState, [e.target.name]: e.target.value })
-  }
-
-  function handleSubmit(e) {
+const Contact = () => {
+  const [status, setStatus] = useState("Submit");
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formState);
-  }
- 
-
-    return (
-        <section>
-      <h1>Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
+    setStatus("Sending...");
+    const { name, email, message } = e.target.elements;
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+    let response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
+  };
+  return (
+    <form onSubmit={handleSubmit}>
       <div>
         <label htmlFor="name">Name:</label>
-        <input type="text" defaultValue={name} onChange={handleChange} name="name" />
-     </div>
-     <div>
-        <label htmlFor="email">Email address:</label>
-        <input type="email" defaultValue={email} name="email" onChange={handleChange} />
-    </div>
-    <div>
+        <input type="text" id="name" required />
+      </div>
+      <div>
+        <label htmlFor="email">Email:</label>
+        <input type="email" id="email" required />
+      </div>
+      <div>
         <label htmlFor="message">Message:</label>
-        <textarea name="message" defaultValue={message} onChange={handleChange} rows="5"  />
-    </div>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-    )
-}
+        <textarea id="message" required />
+      </div>
+      <button type="submit">{status}</button>
+    </form>
+  );
+};
 
 export default Contact;
