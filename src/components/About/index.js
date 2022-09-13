@@ -3,6 +3,7 @@ import React from "react";
 import {  Box, Heading, Grid, Image, Text, Paragraph, WorldMap, Stack } from 'grommet'
 import Portfolio from '../Portfolio';
 import { FooterExample } from '../Footer';
+import Projects from '../Project';
 
 function About() {
     return (
@@ -70,6 +71,7 @@ function About() {
       <Box>
       <Heading alignSelf='center' pad='small' margin='small'><h3>My Work ,</h3></Heading>
       <Text margin='medium'>With more work available to be seen through my GitHub page</Text>
+      <Projects />
       </Box>
       <Portfolio />
       </Grid>

@@ -12,6 +12,7 @@ import { FormClose, Cube } from 'grommet-icons';
 import '../src/index.css'
 import { Home } from './components/Home';
 import { NavSide } from './components/Nav';
+import Contact from './components/Contact';
 
 const theme = {
   global: {
@@ -96,7 +97,7 @@ class App extends Component {
                       align='center'
                       justify='center'
                     >
-                      sidebar
+                      <Contact/>
                     </Box>
                   </Layer>
                 )}
