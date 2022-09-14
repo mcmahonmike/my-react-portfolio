@@ -1,6 +1,6 @@
 import image from '../../assets/images/mike-m.png'
 import React from "react";
-import {  Box, Heading, Grid, Image, Text, Paragraph, WorldMap, Stack } from 'grommet'
+import {  Box, Heading, Grid, Image, Text, Paragraph, WorldMap, Stack, Avatar } from 'grommet'
 import Portfolio from '../Portfolio';
 import { FooterExample } from '../Footer';
 import Projects from '../Project';
@@ -11,10 +11,10 @@ function About() {
       <Grid columns={['1/2', '1/2']}>
         <Box alignSelf="center" margin='medium' pad='small'>
           <Heading level={2} size="large" margin="none" >
-             <div>Welcome ,</div> 
+             <div>Welcome,</div> 
           </Heading>
             <Paragraph size="large" margin={{ bottom: 'none' }}>
-                This is Haloumi, built to showcase some of the work and services that are possible.
+                This is Haloumi, a web development website built as a profile to showcase some of the projects I have completed as well as my experience as a web developer.
             </Paragraph>
         </Box>
       <Box height={{ min: 'medium' }} pad={{ vertical: 'large' }} border='between'>
@@ -57,20 +57,23 @@ function About() {
             </Paragraph>
       </Box>
       <Box height={{ min: 'medium' }} pad={{ vertical: 'large' }}>
-          <Box height="medium"
+          <Box 
+                pad='none'
+                height="medium"
                 animation='zoomIn'
-                round='true'>
-            <Image
-              elevation='medium'
+                round='strong'
+                alignSelf='center'
+                >
+            <Avatar
               src={image}
-              fit="contain"
+              size='5xl'
               alt="Michael McMahon standing in a field"
             />
           </Box>
       </Box>
       <Box>
-      <Heading alignSelf='center' pad='small' margin='small'><h3>My Work ,</h3></Heading>
-      <Text margin='medium'>With more work available to be seen through my GitHub page</Text>
+      <Heading alignSelf='center' pad='small' margin='medium'><div>My Work ,</div></Heading>
+      <Text alignSelf='center' margin='medium'>With more work available to be seen through my GitHub page</Text>
       <Projects />
       </Box>
       <Portfolio />

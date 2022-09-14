@@ -10,7 +10,7 @@ function Portfolio() {
             <Page kind="wide" pad='small' >
             <PageContent background="light-6"  elevation="medium" round='medium'>
             <PageHeader
-                title="Stats Buddy"
+                title='Stats Buddy'
                 subtitle=<Box width='small'> <Button margin="small" href="https://nameless-taiga-18247.herokuapp.com/" border='brand' label="Visit Page" alignSelf="center" /> <Button href="https://github.com/SafteyDav3/stats-buddy" alignSelf="center" border='brand'label=<Github/> /></Box>
                 actions={ <Box><Image fit="contain"
                 src={imageStat} /></Box> }
