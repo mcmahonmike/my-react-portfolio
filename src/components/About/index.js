@@ -71,12 +71,16 @@ function About() {
             />
           </Box>
       </Box>
-      <Box>
+      <Box wrap flex>
       <Heading alignSelf='center' pad='small' margin='medium'><div>My Work ,</div></Heading>
-      <Text alignSelf='center' margin='medium'>With more work available to be seen through my GitHub page</Text>
-      <Projects />
+      <Text alignSelf='center' margin='medium'>Curious to see more? Please visit my GitHub page, link provided below</Text>
       </Box>
+      
+      <Projects />
+      
+      
       <Portfolio />
+      
       </Grid>
       <FooterExample/>
       </>

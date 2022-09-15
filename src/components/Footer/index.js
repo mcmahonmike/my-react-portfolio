@@ -9,8 +9,7 @@ export const FooterExample = () => {
   const footerLinks = [
     { label: 'Github', link:'https://github.com/mcmahonmike' },
     { label: 'LinkedIn', link:'https://www.linkedin.com/in/michael-mcmahon-57637113b/' },
-    { label: '', link:'' },
-    { label: '', link:'' },
+
   ];
   return (
     <Footer
@@ -26,7 +25,7 @@ export const FooterExample = () => {
         gap="xsmall"
       >
         <Text size="small">
-          &copy; {year} HALOUMI LLC
+          &copy; {year} HALOUMI 
         </Text>
       </Box>
       <Box

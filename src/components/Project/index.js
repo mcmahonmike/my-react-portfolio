@@ -4,8 +4,8 @@ import {Html5, Css3, Heroku, Js, Node, Mysql, GraphQl, Npm, Reactjs} from 'gromm
 
 const Projects = () => {
     return (
-        <>
-        <Box gap="small" direction="row" margin='small' justify="center">
+        <Box height={{ min: 'medium' }} pad={{ vertical: 'large' }} border='between'>
+        <Box wrap gap="small" direction="row" margin='small' justify="center">
         <Html5 size="large" color="plain"/>
         <Css3 size="large" color="plain"/>
         <Heroku size="large" color="plain"/>
@@ -19,7 +19,7 @@ const Projects = () => {
         <Box margin='medium' justify="center">
             <Button size="large" color='white' alignSelf="center" href="https://docs.google.com/document/d/1-dbCqZ2VCpJ-6ztDnvCG6XkqlTC2qRgiVuevMxBYDrs/edit?usp=sharing" label=<Text color='white'>MY RESUME</Text> />
         </Box>
-        </>
+        </Box>
     );
 };
 
