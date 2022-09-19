@@ -1,13 +1,14 @@
 import image from '../../assets/images/mike-m.png'
 import React from "react";
-import {  Box, Heading, Grid, Image, Text, Paragraph, WorldMap, Stack, Avatar } from 'grommet'
+import {  Box, Heading, Grid, Text, Paragraph, WorldMap, Stack, Avatar } from 'grommet'
 import Portfolio from '../Portfolio';
 import { FooterExample } from '../Footer';
-import Projects from '../Project';
+
 
 function About() {
     return (
       <>
+      <Grid>
       <Grid columns={['1/2', '1/2']}>
         <Box alignSelf="center" margin='medium' pad='small'>
           <Heading level={2} size="large" margin="none" >
@@ -48,11 +49,11 @@ function About() {
           </Box>
           </Stack>
       </Box>
-      <Box alignSelf="center" margin='medium' pad='small' border='all' elevation='medium'>
+      <Box alignSelf="center" margin='medium' pad='small' border='all'>
       <Heading level={2} size="large" margin="small" >
              <div>Hello!</div> 
           </Heading>
-          <Paragraph size="large">
+          <Paragraph alignSelf='center' size="large" margin={{ bottom: 'none' }}>
                 My name is Mike McMahon, I am a web developer and I am the one who built and runs Haloumi and all of the content within it! If you continue below you can explore some of my past work and projects as well as a bit of what I know.
             </Paragraph>
       </Box>
@@ -64,23 +65,17 @@ function About() {
                 round='strong'
                 alignSelf='center'
                 >
-            <Avatar
+            <Avatar 
               src={image}
               size='5xl'
               alt="Michael McMahon standing in a field"
             />
           </Box>
       </Box>
-      <Box wrap flex>
-      <Heading alignSelf='center' pad='small' margin='medium'><div>My Work ,</div></Heading>
-      <Text alignSelf='center' margin='medium'>Curious to see more? Please visit my GitHub page, link provided below</Text>
-      </Box>
-      
-      <Projects />
-      
-      
-      <Portfolio />
-      
+      </Grid>
+         
+            <Portfolio />
+          
       </Grid>
       <FooterExample/>
       </>

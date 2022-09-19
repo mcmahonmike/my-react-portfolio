@@ -4,7 +4,7 @@ import {Html5, Css3, Heroku, Js, Node, Mysql, GraphQl, Npm, Reactjs} from 'gromm
 
 const Projects = () => {
     return (
-        <Box height={{ min: 'medium' }} pad={{ vertical: 'large' }} border='between'>
+        <Box flex height={{ min: 'medium' }} pad={{ vertical: 'large' }} border='between'>
         <Box wrap gap="small" direction="row" margin='small' justify="center">
         <Html5 size="large" color="plain"/>
         <Css3 size="large" color="plain"/>

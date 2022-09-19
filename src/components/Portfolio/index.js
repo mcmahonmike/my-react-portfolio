@@ -1,13 +1,23 @@
-import { Page, PageContent, Anchor, Button, PageHeader, Image, Box, Paragraph } from "grommet";
+import { Grid, Page, PageContent, Heading, Button, PageHeader, Image, Box, Paragraph } from "grommet";
 import React from "react";
 import { Github } from "grommet-icons";
 import imageJag from '../../assets/images/jaguar-games-home.jpg'
 import imageStat from '../../assets/images/stats-buddy.jpg'
 import imageMeal from '../../assets/images/meal-maker.png'
+import Projects from "../Project";
+
+
+
 function Portfolio() {
     return (
-        <Box height={{ min: 'medium' }} pad={{ vertical: 'large' }} border='between'>
-            <Page wrap kind="wide" pad='small' >
+        // <Box width={{min:'medium', max:'large'}}alignContent='center' height={{ min: 'medium' }} pad={{ vertical: 'large' }} border='between'>
+            <Grid alignSelf="center" pad={{ vertical: 'xxsmall' }} rows='flex' justifyContent='center' width={{min:'small', max:'xlarge'}}>
+               <Heading textAlign="center" size="large" pad='small' margin="medium" >
+                    <div>My Work</div>
+                </Heading>
+            
+        
+            <Page pad='small' >
             <PageContent background="#cdd9eb"  elevation="medium" round='large'>
             <PageHeader
                 title='Stats Buddy'
@@ -15,10 +25,11 @@ function Portfolio() {
                 actions={ <Box height="small" width="small"><Image fit="contain"
                 src={imageStat} /></Box> }
             />
-            <Paragraph>An application for cataloging and managing a baseball league with individual player and team stats. Full Stack, JavaScript, HandleBars</Paragraph>
+            <Paragraph>An application for cataloging and managing a baseball league with individual player and team stats.</Paragraph>
+            <Paragraph>Full Stack, JavaScript, HandleBars</Paragraph>
             </PageContent>
             </Page>
-            <Page wrap kind="wide" pad='small'>
+            <Page wrap kind="full" pad='small'>
             <PageContent background="#cdd9eb" elevation="medium" round='large'>
             <PageHeader
                 title="Jaguar Games"
@@ -26,7 +37,8 @@ function Portfolio() {
                 actions={<Box height="small" width="small"><Image fit="contain"
                 src={imageJag} /></Box>}
             />
-            <Paragraph>A central hub for users to organize their favorite games and search through todays most popular games. Full Stack, M.E.R.N.</Paragraph>
+            <Paragraph>A central hub for users to organize their favorite games and search through todays most popular games.</Paragraph>
+            <Paragraph>Full Stack, M.E.R.N.</Paragraph>
             </PageContent>
             </Page>
             <Page wrap kind="wide" pad='small'>
@@ -37,11 +49,18 @@ function Portfolio() {
                 actions={<Box height="small" width="small"><Image fit="contain"
                 src={imageMeal} /></Box>}
             />
-            <Paragraph>A simple app built for generating a list of helpful recipe ideas through using helpful online API's. HTML, Materialize, JavaScript</Paragraph>
+            <Paragraph>A simple app built for generating a list of helpful recipe ideas through using helpful online API's.</Paragraph>
+            <Paragraph>HTML, Materialize, JavaScript</Paragraph>
             </PageContent>
             </Page>
-
-        </Box>
+            
+                <Paragraph textAlign="center" fill margin='medium'>Curious to see more? Please visit my GitHub page, link provided below</Paragraph>
+               
+                <Projects />
+                
+            </Grid>
+        // </Box>
+        
     )
 }
 
