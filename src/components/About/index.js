@@ -10,12 +10,12 @@ function About() {
       <>
       <Grid>
       <Grid columns={['1/2', '1/2']}>
-        <Box alignSelf="center" margin='medium' pad='small'>
+        <Box border='bottom' alignSelf="center" margin='medium' pad='medium'>
           <Heading level={2} size="large" margin="none" >
              <div>Welcome,</div> 
           </Heading>
             <Paragraph size="large" margin={{ bottom: 'none' }}>
-                This is Haloumi, a web development website built as a profile to showcase some of the projects I have completed as well as my experience as a web developer.
+                This is Haloumi, a web development website built to showcase my projects as well as my experience with programming.
             </Paragraph>
         </Box>
       <Box height={{ min: 'medium' }} pad={{ vertical: 'large' }} border='between'>
@@ -49,12 +49,12 @@ function About() {
           </Box>
           </Stack>
       </Box>
-      <Box alignSelf="center" margin='medium' pad='small' border='all'>
+      <Box alignSelf="center" margin='medium' pad='small' border='all' elevation='medium'>
       <Heading level={2} size="large" margin="small" >
              <div>Hello!</div> 
           </Heading>
           <Paragraph alignSelf='center' size="large" margin={{ bottom: 'none' }}>
-                My name is Mike McMahon, I am a web developer and I am the one who built and runs Haloumi and all of the content within it! If you continue below you can explore some of my past work and projects as well as a bit of what I know.
+                My name is Mike McMahon, and I am the developer and operator of Haloumi. Continue below to explore some of the applications I've developed.
             </Paragraph>
       </Box>
       <Box height={{ min: 'medium' }} pad={{ vertical: 'large' }}>

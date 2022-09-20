@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom"
 import { Box, Header, Menu, Button, Text} from 'grommet'
-import { Cube } from "grommet-icons";
+import { Send } from "grommet-icons";
 import '../../../src/index.css'
 
 
@@ -31,7 +31,7 @@ function HomeHeader(props) {
             gap="small"
             pad={{ vertical: 'small' }}
             responsive={false}>
-        <Cube
+        <Send
             color="brand"/>
         <Text 
             align='center'

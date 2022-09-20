@@ -8,7 +8,7 @@ import {
   Layer,
   ResponsiveContext,
 } from 'grommet';
-import { FormClose, Cube } from 'grommet-icons';
+import { FormClose, Send } from 'grommet-icons';
 import '../src/index.css'
 import { Home } from './components/Home';
 import { NavSide } from './components/Nav';
@@ -56,7 +56,7 @@ class App extends Component {
               <AppBar >
                 <Heading level='3' margin='none'><div>[HALOUMI]</div></Heading>
                 <Button
-                  icon={<Cube />}
+                  icon={<Send />}
                   onClick={() => this.setState({ showSidebar: !this.state.showSidebar })}
                 />
               </AppBar>
