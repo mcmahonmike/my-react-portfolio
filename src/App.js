@@ -13,6 +13,7 @@ import '../src/index.css'
 import { Home } from './components/Home';
 import { NavSide } from './components/Nav';
 import Contact from './components/Contact';
+import About from './components/About';
 
 const theme = {
   global: {
@@ -62,7 +63,7 @@ class App extends Component {
               </AppBar>
               <Box direction='row' flex overflow={{ horizontal: 'hidden' }}>
                 <Box flex align='center' justify='center'>
-                  <Home />
+                  <About />
                 </Box>
                 {(!showSidebar || size !== 'small') ? (
                   <Collapsible direction="horizontal" open={showSidebar}>
