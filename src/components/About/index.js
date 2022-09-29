@@ -77,7 +77,7 @@ function About() {
             <Portfolio />
           
       </Grid>
-      <FooterExample/>
+      {/* <FooterExample/> */}
       </>
           );
 }
