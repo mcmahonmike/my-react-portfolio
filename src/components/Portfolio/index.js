@@ -30,7 +30,7 @@ function Portfolio() {
                         <PageContent background="#cdd9eb" elevation="medium" round='large'>
                             <PageHeader
                                 title="Jaguar Games"
-                                subtitle=<Box width='small'> <Button margin='small' href="https://jaguar-games.herokuapp.com/" border='brand' label="Visit Site" alignSelf="center" /> <Button href="https://github.com/mcmahonmike/jaguar-games" alignSelf="center" border='brand'label=<Github/> /></Box>
+                                subtitle=<Box width='small'> <Button margin='small' href="https://jaguar-games.herokuapp.com/" border='brand' label="Visit Page" alignSelf="center" /> <Button href="https://github.com/mcmahonmike/jaguar-games" alignSelf="center" border='brand'label=<Github/> /></Box>
                                 actions={<Box height="small" width="small"><Image fit="contain"
                                 src={imageJag} /></Box>}
                                 />
@@ -42,7 +42,7 @@ function Portfolio() {
                         <PageContent background="#cdd9eb" elevation="medium" round='large'>
                             <PageHeader
                                 title="Meal Maker"
-                                subtitle=<Box width='small'> <Button margin='small' href="https://mcmahonmike.github.io/meal-maker/" border='brand' label="Visit Site" alignSelf="center" /> <Button href="https://github.com/mcmahonmike/meal-maker" alignSelf="center" border='brand'label=<Github/> /></Box>
+                                subtitle=<Box width='small'> <Button margin='small' href="https://mcmahonmike.github.io/meal-maker/" border='brand' label="Visit Page" alignSelf="center" /> <Button href="https://github.com/mcmahonmike/meal-maker" alignSelf="center" border='brand'label=<Github/> /></Box>
                                 actions={<Box height="small" width="small"><Image fit="contain"
                                 src={imageMeal} /></Box>}
                                  />

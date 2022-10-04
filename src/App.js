@@ -14,6 +14,7 @@ import { Home } from './components/Home';
 import { NavSide } from './components/Nav';
 import Contact from './components/Contact';
 import About from './components/About';
+import { FooterExample } from './components/Footer';
 
 const theme = {
   global: {
@@ -103,6 +104,7 @@ class App extends Component {
                   </Layer>
                 )}
               </Box>
+              <FooterExample/>
             </Box>
           )}
         </ResponsiveContext.Consumer>

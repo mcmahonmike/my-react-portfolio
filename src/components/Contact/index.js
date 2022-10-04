@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <Box alignSelf="center" margin='small' justify="center">
       <PageHeader 
-          title="Contact Me!"/>
+          title="Email!"/>
           
     <form action="9d17f8c6d84219e88df3c4225f2d623c" method="POST">
     <Box margin='small' justify="center">
