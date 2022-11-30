@@ -2,6 +2,8 @@
 
 ## Description
 Haloumoi is a host website for Michael McMahon's professional portfolio. It contains sections for a brief summary, a descriptive list of his past works with links to the projects, a list of the coding languages he uses as well as links to his resume, github, and linkedIn and a section for reaching out via email.
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/98231043/204908493-e252ce80-11f1-4dea-8e2f-cf177e6a56ef.png">
+
 
 
 ## Table Contents
